@@ -1,0 +1,12 @@
+@use './imports/colors.scss' as c;
+
+.about-page {
+  nav {
+    width: 100%;
+    ul {
+      li:nth-child(3) {
+        color: c.$main-blue;
+      }
+    }
+  }
+}

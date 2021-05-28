@@ -1,0 +1,37 @@
+@use './imports/colors.scss' as c;
+@use './imports/fonts.scss' as f;
+
+.nav-header {
+  width: 100%;
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2.8rem;
+    padding: 3rem 4rem 0 0;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+    color: c.$sec-grey10;
+    text-decoration: none;
+
+    li {
+      cursor: pointer;
+      color: c.$sec-grey10;
+      a {
+        &:link {
+          text-decoration: inherit;
+          color: inherit;
+        }
+
+        &:visited {
+          text-decoration: inherit;
+          color: inherit;
+        }
+        &:hover {
+          color: c.$main-blue;
+        }
+      }
+    }
+  }
+}

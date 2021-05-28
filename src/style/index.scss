@@ -1,0 +1,17 @@
+@use './imports/colors.scss' as c;
+
+*{
+    font-size: 10px;
+    background-color: c.$sec-grey1 ;
+}
+
+.home-page{
+    .nav-header {
+        width: 100%;
+        ul{
+           li:first-child{
+            color: c.$main-blue;
+           }
+        }
+    }
+}
