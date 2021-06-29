@@ -1,5 +1,4 @@
 import * as React from "react"
-import { FaAdobe } from 'react-icons/fa';
 import '../style/projects.scss';
 import Navigation from './../templates/navigation'
 import Social from "./../templates/social"

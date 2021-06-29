@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import "./../style/reset.css";
 import "./../style/index.scss";
 import Navigation from "./../templates/navigation";
@@ -15,6 +14,13 @@ const IndexPage = () => {
       <Navigation />
       <Helmet title="Home" bodyAttributes={{ class: "home-page" }} />
       <Social />
+
+      <div class='introduction'>
+        <h1>Hi, I'm</h1>
+        <h2>Vinicius Ortega,</h2>
+        <span>web </span><span>developer</span>
+        <button>Contact me !</button>
+      </div>
  
     </main>
   );
