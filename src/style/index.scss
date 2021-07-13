@@ -1,8 +1,12 @@
-@use './imports/colors.scss' as c;
+@use "./imports/colors.scss" as c;
+@use "./imports/fonts.scss";
 
 * {
-  font-size: 10px;
   background-color: c.$sec-grey1;
+}
+
+:root{
+  font-size: 10px;
 }
 
 .home-page {
@@ -19,21 +23,24 @@
 .introduction {
   position: absolute;
   left: 20%;
-  top: 35%;
-  font-size: 3rem;
+  top: 32%;
+  font-size: 6rem;
   font-weight: 800;
 
   h1 {
-    padding-bottom: 1rem;
+    padding-bottom: 1.8rem;
     color: c.$main-green;
+    font-family: 'Source Code Pro', monospace;
   }
   h2 {
-    padding-bottom: 1rem;
+    padding-bottom: 1.8rem;
     color: c.$sec-grey10;
+    font-family: 'Roboto', sans-serif;
   }
   h3 {
-    padding-bottom: 1rem;
+    padding-bottom: 1.8rem;
     color: c.$sec-grey10;
+    font-family: 'Roboto', sans-serif;
   }
   span {
     position: relative;
@@ -44,12 +51,13 @@
   }
   button {
     position: relative;
-    top: 4.2rem;
-    left: -22.2rem;
-    padding: 0.3rem 0.8rem;
-    font-size: 2rem;
+    top: 7rem;
+    left: -48rem;
+    padding: 0.5rem 1.3rem;
+    font-size: 3.2rem;
     font-weight: 300;
     color: c.$main-blue;
     border-color: c.$main-blue;
+    cursor: pointer;
   }
 }

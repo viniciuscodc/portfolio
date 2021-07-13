@@ -6,7 +6,7 @@ import "./../style/social.scss";
 // markup
 const Social = () => {
   return (
-    <nav class="nav-social">
+    <nav className="nav-social">
  
           <a href="https://www.instagram.com/viniciuswortega/" target="_blank" rel="noopener noreferrer">
             <FaInstagram size="30" />

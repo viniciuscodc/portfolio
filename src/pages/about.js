@@ -13,7 +13,7 @@ const AboutPage = () => {
   return (
     <main>   
     <Navigation/>
-    <Helmet title='About' bodyAttributes={{ class: 'about-page' }} />
+    <Helmet title='About' bodyAttributes={{ className: 'about-page' }} />
     <Social />
     </main>
     

@@ -13,7 +13,7 @@ const ContactPage = () => {
   return (
     <main>   
     <Navigation/>
-    <Helmet title='Contact' bodyAttributes={{ class: 'contact-page' }} />
+    <Helmet title='Contact' bodyAttributes={{ className: 'contact-page' }} />
     <Social />
     </main>
     

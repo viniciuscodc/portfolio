@@ -10,3 +10,37 @@
         }
     }
 }
+
+.projects-header{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    color: c.$main-green;
+    font-weight: 600;
+    padding: 2rem 0;
+}
+
+.card-grid{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 10px;
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 23rem;
+        .card-image{
+            img{
+                width: 23rem;
+            }
+        }
+        .card-information{
+            height: 120px;
+            font-size: 1rem;
+
+        }
+        .card-tags{
+
+        }
+    }
+}
