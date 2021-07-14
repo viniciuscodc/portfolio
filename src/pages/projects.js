@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 import "./../style/reset.css";
 import "./../style/projects.scss";
 import Navigation from "./../templates/navigation";
@@ -32,6 +32,21 @@ for (let i = 0; i < projects.length; i++) {
 
 //let mainContainer = React.createElement("p", { id: "x" }, "texto texto");
 
+function CardTag(cardTagData){
+
+  console.log(cardTagData.cardTagData)
+  
+  for (let i = 0; i < projects.length; i++) {
+
+    if(typeof projects[i].tag_1 !== "undefined"){
+      return(<span>{cardTagData.cardTagData.tag_1}</span>)
+    }
+    
+    else{
+      return(null);
+    }
+  }
+}
 
 const ProjectPage = () => {
 
@@ -56,7 +71,10 @@ const ProjectPage = () => {
             </p>
           </div>
           <div className="tag-container">
-          {/*
+          
+            <CardTag cardTagData={card}  />
+            {
+          /*
             <span>{card.tag_1}</span>
             <span>{card.tag_2}</span>
             <span>Javascript</span>
@@ -70,6 +88,7 @@ const ProjectPage = () => {
       </div>
     </main>
   );
+  
 };
 
 export default ProjectPage;
