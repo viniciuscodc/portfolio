@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 import "./../style/social.scss";
 

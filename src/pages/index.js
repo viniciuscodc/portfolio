@@ -15,7 +15,7 @@ const IndexPage = () => {
       <Helmet title="Home" bodyAttributes={{ class: "home-page" }} />
       <Social />
 
-      <div class="introduction">
+      <div className="introduction">
         <h1>Hi, I'm</h1>
         <h2>Vinicius Ortega,</h2>
         <span>web </span><span>developer</span>
