@@ -21,7 +21,7 @@ const ProjectPage = () => {
       <div className="card-grid">
         <div className="card">
           <div className="card-image">
-            <img src={image} alt="image-1" />
+            <img src={image} alt="image"/>
           </div>
           <div className="card-information">
             <p>
@@ -30,7 +30,15 @@ const ProjectPage = () => {
               Javascript e PHP para a página de contato.
             </p>
           </div>
-          <div className="card-tags"></div>
+          <div className="tag-container">
+            
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Javascript</span>
+          </div>
+          <div className="card-button">
+            <span>Check</span>
+          </div>
         </div>
       </div>
     </main>

@@ -1,12 +1,9 @@
 @use "./imports/colors.scss" as c;
 @use "./imports/fonts.scss";
 
-* {
-  background-color: c.$sec-grey1;
-}
-
 :root{
   font-size: 10px;
+  background-color: c.$sec-grey1;
 }
 
 .home-page {
@@ -56,6 +53,7 @@
     padding: 0.5rem 1.3rem;
     font-size: 3.2rem;
     font-weight: 300;
+    background-color: c.$sec-grey1;
     color: c.$main-blue;
     border-color: c.$main-blue;
     cursor: pointer;
