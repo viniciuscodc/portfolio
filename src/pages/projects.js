@@ -8,6 +8,7 @@ import image from "./../images/image-1.png";
 
 const projects = [
   {
+    id: 2,
     description:
       "Website feito para a concessionária Polaris em Curitiba. O website é responsivo e foi desenhado no Adobe XD , feito usando HTML, CSS, Javascript e PHP para a página de contato.",
     tag_1: "CSS",
@@ -15,32 +16,40 @@ const projects = [
     tag_3: "Javascript",
   },
   {
+    id: 1,
     description:
       "Website feito para a concessionária Polaris em Curitiba. O website é responsivo e foi desenhado no Adobe XD , feito usando HTML, CSS, Javascript e PHP para a página de contato.",
-    tag_1: "CSS2",
-    tag_2: "HTML2",
-    tag_3: "Javascript",
+    tag_1: "CSS",
+    tag_2: "HTML",
+    tag_3: "Docker",
+    tag_4: "React",
+    tag_5: "Javascript",
   },
 ];
 
 function CardTag(cardTagData) {
-  function isNotNull(x) {
-    return typeof x !== "undefined";
+  function isNotUndfined(valueChecked) {
+    return typeof valueChecked !== "undefined";
   }
 
-  let tag_1 = projects[cardTagData.cardIndex].tag_1;
-  if (isNotNull(tag_1)) {
-    let spanText = cardTagData.cardTagData.tag_1;
-    var spanElement = React.createElement("span", { key: spanText }, spanText);
-  }
+  let tags = [
+    projects[cardTagData.cardIndex].tag_1,
+    projects[cardTagData.cardIndex].tag_2,
+    projects[cardTagData.cardIndex].tag_3,
+    projects[cardTagData.cardIndex].tag_4,
+    projects[cardTagData.cardIndex].tag_5,
+  ];
 
-  let tag_2 = projects[cardTagData.cardIndex].tag_2;
-  if (isNotNull(tag_2)) {
-    let spanText = cardTagData.cardTagData.tag_2;
-    var spanElement2 = React.createElement("span", { key: spanText }, spanText);
-  }
-
-  let spanList = [spanElement, spanElement2];
+  let spanList = tags
+    .filter((span) => isNotUndfined(span))
+    .map(
+      (span) =>
+        (span = React.createElement(
+          "span",
+          { key: span + projects[cardTagData.cardIndex].id },
+          span
+        ))
+    );
 
   return spanList;
 }
