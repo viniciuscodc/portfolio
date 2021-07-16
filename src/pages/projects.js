@@ -52,6 +52,7 @@ const projects = [
 ];
 
 function CardTag(cardTagData) {
+  
   function isNotUndfined(valueChecked) {
     return typeof valueChecked !== "undefined";
   }

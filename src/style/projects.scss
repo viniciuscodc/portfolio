@@ -1,4 +1,4 @@
-@use './imports/colors.scss' as c;
+@use './imports/colors.scss' as color;
 @use "./imports/fonts.scss";
 
 .projects-page{
@@ -6,7 +6,7 @@
         width: 100%;
         ul{
            li:nth-child(2){
-            color: c.$main-blue;
+            color: color.$main-blue;
            }
         }
     }
@@ -15,12 +15,12 @@
 .projects-header{
     display: flex;
     justify-content: center;
-    padding: 2rem 0;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
     font-size: 4rem;
     font-weight: 600;
     font-family: 'Roboto', sans-serif;
-    color: c.$main-green;
-    text-shadow: 2px 2px 5px #111111;
+    color: color.$main-green;
 }
 
 .card-grid{
@@ -29,7 +29,6 @@
     justify-content: center;
     gap: 3rem;
     width: 70%;
-    
     margin: 0 auto;
     font-size: 10px;
 
@@ -37,7 +36,7 @@
         display: flex;
         flex-direction: column;
         width: 28rem;
-        background-color: c.$sec-grey2;
+        background-color: color.$sec-grey2;
         -webkit-box-shadow: 3px 2px 16px -4px rgba(0,0,0,0.55); 
         box-shadow: 3px 2px 16px -4px rgba(0,0,0,0.55);
         
@@ -52,10 +51,9 @@
                 margin: 1rem auto;
                 width: 85%;
                 font-size: 1.4rem;
-                color: c.$sec-grey7;
+                color: color.$sec-grey7;
                 font-family: 'Roboto', sans-serif;
                 text-shadow: 2px 4px 8px rgba(0,0,0,0.55);
-               // text-shadow: 2px 2px rgba(43, 42, 42, 0.65);
                 line-height: 1.6rem;
             }
 
@@ -63,7 +61,7 @@
                 content:"";
                 display:block;
                 width: 100%;
-                border-bottom: 1px solid c.$sec-grey3;
+                border-bottom: 1px solid color.$sec-grey3;
             }
         }
 
@@ -75,8 +73,8 @@
                 font-family: 'Roboto', sans-serif;
                 margin: 0 0.4rem;
                 padding: 0.2rem 0.5rem;
-                background-color: c.$sec-grey3;
-                color: c.$sec-grey7;
+                background-color: color.$sec-grey3;
+                color: color.$sec-grey7;
                 -webkit-box-shadow: 0px 2px 13px -4px #222222; 
                 box-shadow: 0px 2px 13px -4px #222222;
             }
@@ -91,9 +89,8 @@
             font-weight: 600;
             font-family: 'Roboto', sans-serif;
             text-shadow: 2px 4px 8px rgba(0,0,0,0.4);
-           // text-shadow: 2px 2px rgba(43, 42, 42, 0.65);
-            background-color: c.$sec-grey3;
-            color: c.$main-green;
+            background-color: color.$sec-grey3;
+            color: color.$main-green;
             cursor: pointer;
         }
 
