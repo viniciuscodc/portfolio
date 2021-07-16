@@ -2,10 +2,7 @@ import * as React from "react";
 import {Link} from "gatsby";
 import "./../style/navigation.scss";
 
-// data
-
-// markup
-const Navigation = () => {
+export default function Navigation() {
   return (
       <nav className='nav-header'>
         <ul>
@@ -18,4 +15,4 @@ const Navigation = () => {
   )
 }
 
-export default Navigation
+

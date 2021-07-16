@@ -2,11 +2,9 @@ import * as React from "react";
 import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 import "./../style/social.scss";
 
-// markup
-const Social = () => {
+export default function Social(){
   return (
-    <nav className="nav-social">
- 
+    <div className="nav-social">
           <a href="https://www.instagram.com/viniciuswortega/" target="_blank" rel="noopener noreferrer">
             <FaInstagram size="30" />
             </a>
@@ -16,11 +14,10 @@ const Social = () => {
           <a href="https://github.com/viniciuscodc" target="_blank" rel="noopener noreferrer">
             <FaGithub size="30" />
           </a>
-
-    </nav>
+    </div>
   );
 };
 
-export default Social;
+
 
 

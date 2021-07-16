@@ -8,13 +8,37 @@ import image from "./../images/image-1.png";
 
 const projects = [
   {
+    id: 4,
+    description:
+      "Website feito para a concessionária Polaris em Curitiba. O website é responsivo e foi desenhado no Adobe XD , feito usando HTML, CSS, Javascript e PHP para a página de contato.",
+    tag_1: "CSS",
+    tag_2: "HTML",
+    tag_3: "Docker",
+    tag_4: "React",
+    tag_5: "Javascript",
+  },
+  {
+    id: 3,
+    description:
+      "Website feito para a concessionária Polaris em Curitiba. O website é responsivo e foi desenhado no Adobe XD , feito usando HTML, CSS, Javascript e PHP para a página de contato.",
+    tag_1: "CSS",
+    tag_2: "HTML",
+    tag_3: "Docker",
+    tag_4: "React",
+    tag_5: "Javascript",
+  },
+
+  {
     id: 2,
     description:
       "Website feito para a concessionária Polaris em Curitiba. O website é responsivo e foi desenhado no Adobe XD , feito usando HTML, CSS, Javascript e PHP para a página de contato.",
     tag_1: "CSS",
     tag_2: "HTML",
-    tag_3: "Javascript",
+    tag_3: "Docker",
+    tag_4: "React",
+    tag_5: "Javascript",
   },
+
   {
     id: 1,
     description:

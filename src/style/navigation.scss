@@ -18,6 +18,7 @@
     li {
       cursor: pointer;
       color: c.$sec-grey10;
+      text-shadow: 2px 2px 8px #111111;
       a {
         &:link {
           text-decoration: inherit;

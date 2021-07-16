@@ -1,15 +1,10 @@
 import * as React from "react"
-//import {Link} from "gatsby";
 import './../style/about.scss'
 import Navigation from './../templates/navigation'
 import Social from "./../templates/social"
 import { Helmet } from 'react-helmet'
 
-
-// data
-
-// markup
-const AboutPage = () => {
+export default function AboutPage() {
   return (
     <main>   
     <Navigation/>
@@ -20,4 +15,3 @@ const AboutPage = () => {
   )
 }
 
-export default AboutPage

@@ -5,10 +5,7 @@ import Navigation from "./../templates/navigation";
 import Social from "./../templates/social";
 import { Helmet } from "react-helmet";
 
-// data
-
-// markup
-const IndexPage = () => {
+export default function IndexPage() {
   return (
     <main>
       <Navigation />
@@ -26,4 +23,3 @@ const IndexPage = () => {
   );
 };
 
-export default IndexPage;
