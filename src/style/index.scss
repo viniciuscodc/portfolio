@@ -1,9 +1,9 @@
-@use "./imports/colors.scss" as c;
+@use "./imports/colors.scss" as color;
 @use "./imports/fonts.scss";
 
-:root{
+:root {
   font-size: 10px;
-  background-color: c.$sec-grey1;
+  background-color: color.$sec-grey1;
 }
 
 .home-page {
@@ -11,7 +11,7 @@
     width: 100%;
     ul {
       li:first-child {
-        color: c.$main-blue;
+        color: color.$main-blue;
       }
     }
   }
@@ -26,36 +26,73 @@
 
   h1 {
     padding-bottom: 1.8rem;
-    color: c.$main-green;
-    font-family: 'Source Code Pro', monospace;
+    color: color.$main-green;
+    font-family: "Source Code Pro", monospace;
   }
+
   h2 {
     padding-bottom: 1.8rem;
-    color: c.$sec-grey10;
-    font-family: 'Roboto', sans-serif;
+    color: color.$sec-grey10;
+    font-family: "Roboto", sans-serif;
   }
+
   h3 {
     padding-bottom: 1.8rem;
-    color: c.$sec-grey10;
-    font-family: 'Roboto', sans-serif;
+    color: color.$sec-grey10;
+    font-family: "Roboto", sans-serif;
   }
+
   span {
     position: relative;
-    color: c.$sec-grey10;
+    color: color.$sec-grey10;
   }
+
   :nth-child(4) {
-    color: c.$main-green;
+    color: color.$main-green;
   }
+
   button {
+    background: none;
     position: relative;
     top: 7rem;
     left: -48rem;
     padding: 0.5rem 1.3rem;
     font-size: 3.2rem;
     font-weight: 300;
-    background-color: c.$sec-grey1;
-    color: c.$main-blue;
-    border-color: c.$main-blue;
+    color: color.$main-blue;
+    border: 2px solid color.$main-blue;
+    border-color: color.$main-blue;
     cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 101%;
+      height: 100%;
+      background: color.$main-blue;
+      z-index: -1;
+      transition: transform 0.5s;
+      transform-origin: 0 0;
+      transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+      transform: scaleY(0);
+    }
+
+    &:hover {
+      color: color.$sec-grey10;
+      &::before {
+        transform: scaleY(1);
+      }
+    }
   }
+}
+
+.footer-index {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: color.$sec-grey6;
+  font-size: 1.2rem;
 }

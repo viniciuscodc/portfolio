@@ -84,3 +84,15 @@
     }
 
 }
+
+.footer-contact{
+    display: flex;
+    justify-content: center;
+  
+    span{
+      padding-top: 13.7rem;
+      font-size: 1.2rem;
+      color: color.$sec-grey6;
+    }
+  
+}

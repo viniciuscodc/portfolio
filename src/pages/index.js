@@ -1,25 +1,42 @@
 import * as React from "react";
-import "./../style/reset.css";
-import "./../style/index.scss";
-import Navigation from "./../templates/navigation";
-import Social from "./../templates/social";
-import { Helmet } from "react-helmet";
+import "./../style/loader.scss"
+import spinner from "./../images/load.png";
+import IndexContent from "../components/pageContent/indexContent";
 
-export default function IndexPage() {
-  return (
-    <main>
-      <Navigation />
-      <Helmet title="Home" bodyAttributes={{ class: "home-page" }} />
-      <Social />
+ class Index extends React.Component {
+  state = {
+    loading: true,
+  };
 
-      <div className="introduction">
-        <h1>Hi, I'm</h1>
-        <h2>Vinicius Ortega,</h2>
-        <span>web </span><span>developer</span>
-        <button>Contact me !</button>
-      </div>
- 
-    </main>
-  );
-};
+  componentDidMount() {
+    // this simulates an async action, after which the component will render the content
+    this.demoAsyncCall().then(() => this.setState({ loading: false }));
+  }
 
+  render() {
+    const { loading } = this.state;
+
+    if (loading) {
+      // if your component doesn't have to wait for an async action, remove this block
+      return (
+        <div className="loader-wrapper">
+          <img src={spinner} alt="spinner-img" />
+          <span>Loading</span>
+          <div></div>
+          <div className="bar">
+            <div className="bar-progress"></div>
+          </div>
+        </div>
+      );
+    } else {
+      return <IndexContent />;
+    }
+  }
+
+  demoAsyncCall() {
+    return new Promise((resolve) => setTimeout(() => resolve(), 800));
+  }
+
+}
+
+export default Index;

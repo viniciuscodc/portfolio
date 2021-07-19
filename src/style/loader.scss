@@ -1,0 +1,70 @@
+@use "./imports/colors.scss" as color;
+
+.loader-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: color.$sec-grey1;
+    z-index: 1;
+
+    img{
+        width: 2.5rem;
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+
+        0%{ 
+            transform: rotate(0);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+        
+    }
+
+    span{
+        padding-top: 1rem;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 2rem;
+        letter-spacing: 0.4rem;
+        color: color.$sec-grey6;
+    }
+
+    .bar{
+        height: 0.7rem;
+        width: 25rem;
+        margin-top: 1rem;
+        border-radius: 1rem;
+        background-color: color.$sec-grey2;
+        position: relative;
+    }
+
+    .bar-progress{
+        position: absolute;
+        top: -1rem;
+        height: 0.7rem;
+        width: 1rem;
+        margin-top: 1rem;
+        border-radius: 1rem;
+        background-color: color.$main-blue;
+        animation: barIncrease 1s forwards ;
+    }
+
+    @keyframes barIncrease {
+        
+        0%{ 
+            width: 1rem;
+        }
+        100%{
+            width: 25rem;
+        }
+
+    }
+}

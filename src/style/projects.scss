@@ -92,8 +92,25 @@
             background-color: color.$sec-grey3;
             color: color.$main-green;
             cursor: pointer;
+
+            &:hover{
+                color: color.$main-blue;
+            }
         }
 
      
     }
 }
+
+.footer-projects{
+    display: flex;
+    justify-content: center;
+  
+    span{
+      padding-top: 5rem;
+      padding-bottom: 0.8rem;
+      font-size: 1.2rem;
+      color: color.$sec-grey6;
+    }
+  
+  }
