@@ -1,9 +1,9 @@
 import * as React from "react";
 import "./../style/loader.scss"
-import spinner from "./../images/load.png";
 import IndexContent from "../components/pageContent/indexContent";
+import Loader from "./../components/Loader"
 
- class Index extends React.Component {
+export default class Index extends React.Component {
   state = {
     loading: true,
   };
@@ -17,16 +17,9 @@ import IndexContent from "../components/pageContent/indexContent";
     const { loading } = this.state;
 
     if (loading) {
-      // if your component doesn't have to wait for an async action, remove this block
+   
       return (
-        <div className="loader-wrapper">
-          <img src={spinner} alt="spinner-img" />
-          <span>Loading</span>
-          <div></div>
-          <div className="bar">
-            <div className="bar-progress"></div>
-          </div>
-        </div>
+        <Loader />
       );
     } else {
       return <IndexContent />;
@@ -36,7 +29,5 @@ import IndexContent from "../components/pageContent/indexContent";
   demoAsyncCall() {
     return new Promise((resolve) => setTimeout(() => resolve(), 800));
   }
-
 }
 
-export default Index;

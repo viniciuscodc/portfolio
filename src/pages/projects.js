@@ -1,6 +1,6 @@
 import * as React from "react";
 import "./../style/loader.scss";
-import spinner from "./../images/load.png";
+import Loader from "./../components/Loader"
 import ProjectsContent from "../components/pageContent/projectsContent";
 
 export default class Projects extends React.Component {
@@ -17,23 +17,16 @@ export default class Projects extends React.Component {
     const { loading } = this.state;
 
     if (loading) {
-      // if your component doesn't have to wait for an async action, remove this block
+
       return (
-        <div id="app" className="loader-wrapper">
-          <img src={spinner} alt="spinner-img" />
-          <span>Loading</span>
-          <div></div>
-          <div className="bar">
-            <div className="bar-progress"></div>
-          </div>
-        </div>
+        <Loader />
       );
     } else {
       return <ProjectsContent />;
     }
   }
 
- demoAsyncCall() {
+  demoAsyncCall() {
     return new Promise((resolve) => setTimeout(() => resolve(), 800));
   }
 }
