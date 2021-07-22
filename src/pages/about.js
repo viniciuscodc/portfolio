@@ -1,7 +1,7 @@
 import * as React from "react";
-import "./../style/loader.scss";
-import Loader from "./../components/Loader"
-import Index from "../components/pageContent/aboutContent";
+import "src/style/loader.scss";
+import Loader from "src/components/Loader"
+import Index from "src/components/pageContent/aboutContent";
 
 export default class About extends React.Component {
   state = {

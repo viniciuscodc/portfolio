@@ -1,6 +1,6 @@
 import * as React from "react";
 import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
-import "./../style/social.scss";
+import "src/style/social.scss";
 
 export default function Social(){
   return (

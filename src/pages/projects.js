@@ -1,7 +1,7 @@
 import * as React from "react";
-import "./../style/loader.scss";
-import Loader from "./../components/Loader"
-import ProjectsContent from "../components/pageContent/projectsContent";
+import "src/style/loader.scss";
+import Loader from "src/components/Loader"
+import ProjectsContent from "src/components/pageContent/projectsContent";
 
 export default class Projects extends React.Component {
   state = {

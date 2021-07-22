@@ -1,7 +1,7 @@
 import * as React from "react";
-import "./../style/loader.scss"
-import IndexContent from "../components/pageContent/indexContent";
-import Loader from "./../components/Loader"
+import "src/style/loader.scss"
+import IndexContent from "src/components/pageContent/indexContent";
+import Loader from "src/components/Loader"
 
 export default class Index extends React.Component {
   state = {

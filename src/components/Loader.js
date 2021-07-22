@@ -1,6 +1,6 @@
 import * as React from "react";
-import "./../style/loader.scss";
-import spinner from "./../images/load.png";
+import "src/style/loader.scss";
+import spinner from "src/images/load.png";
 
 export default function Loader() {
   return (

@@ -1,14 +1,14 @@
 import * as React from "react";
-import "./../../style/about.scss";
+import "src/style/about.scss";
 import { Helmet } from "react-helmet";
-import Navigation from "./../Navigation";
-import Social from "./../Social";
+import Navigation from "src/components/Navigation";
+import Social from "src/components/Social";
 
 export default function AboutPage() {
   return (
     <main>
       <Navigation />
-      <Helmet title="About" bodyAttributes={{ class: "about-page" }} />
+      <Helmet title="About - Web developer portfolio" bodyAttributes={{ class: "about-page" }} />
       <Social />
       <div className="about-container">
         <h2>About me</h2>

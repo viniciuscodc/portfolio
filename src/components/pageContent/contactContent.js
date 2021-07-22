@@ -1,8 +1,8 @@
 import * as React from "react";
-import "./../../style/contact.scss";
+import "src/style/contact.scss";
 import { Helmet } from "react-helmet";
-import Navigation from "./../Navigation";
-import Social from "./../Social";
+import Navigation from "src/components/Navigation";
+import Social from "src/components/Social";
 
 export default function ContactPage() {
   const email = React.useRef(null);
@@ -12,7 +12,7 @@ export default function ContactPage() {
   return (
     <main>
       <Navigation />
-      <Helmet title="Contact" bodyAttributes={{ class: "contact-page" }} />
+      <Helmet title="Contact - Web developer portfolio" bodyAttributes={{ class: "contact-page" }} />
       <Social />
       <div className="contact-container">
         <h2 className="contact-header">Get in touch</h2>

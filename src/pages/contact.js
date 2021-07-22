@@ -1,7 +1,7 @@
 import * as React from "react";
-import "./../style/loader.scss";
-import Loader from "./../components/Loader"
-import ContactContent from "../components/pageContent/contactContent";
+import "src/style/loader.scss";
+import Loader from "src/components/Loader"
+import ContactContent from "src/components/pageContent/contactContent";
 
 export default class Contact extends React.Component {
   state = {
