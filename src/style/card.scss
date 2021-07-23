@@ -20,7 +20,10 @@
 
     .card-image {
       img {
+        //float: left;
         width: 28rem;
+        height: 14.9rem;
+        object-fit: cover;
       }
     }
 
@@ -68,6 +71,17 @@
 
       &:hover {
         color: color.$main-blue;
+      }
+    }
+
+    a {
+      &:link {
+        text-decoration: inherit;
+        color: inherit;
+      }
+      &:visited {
+        text-decoration: inherit;
+        color: inherit;
       }
     }
   }
