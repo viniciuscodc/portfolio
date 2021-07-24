@@ -1,4 +1,5 @@
 import * as React from "react";
+import "src/style/reset.css";
 import "src/style/contact.scss";
 import { Helmet } from "react-helmet";
 import Navigation from "src/components/Navigation";
@@ -17,9 +18,8 @@ export default function ContactPage() {
       <div className="contact-container">
         <h2 className="contact-header">Get in touch</h2>
         <p>
-          I’m looking for opportunities, freelance or a fixed job. My inbox is
-          open, feel free to contact me to give me feedback about my projects or
-          discuss. I’ll reply to your message as soon as possible.
+          I’m looking for opportunities, freelance or a fixed job. My inbox is open, feel free to contact me
+          to give me feedback about my projects or discuss. I’ll reply to your message as soon as possible.
         </p>
         <ul>
           <li
@@ -37,29 +37,17 @@ export default function ContactPage() {
             viniciuscodc@gmail.com
           </li>
           <li>
-            <a
-              href="https://www.instagram.com/viniciuswortega/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://www.instagram.com/viniciuswortega/" target="_blank" rel="noopener noreferrer">
               Instagram
             </a>
           </li>
           <li>
-            <a
-              href="https://www.linkedin.com/in/vinicius-ortega"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://www.linkedin.com/in/vinicius-ortega" target="_blank" rel="noopener noreferrer">
               Linkedin
             </a>
           </li>
           <li>
-            <a
-              href="https://github.com/viniciuscodc"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://github.com/viniciuscodc" target="_blank" rel="noopener noreferrer">
               Github
             </a>
           </li>

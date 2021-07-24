@@ -1,4 +1,5 @@
 import * as React from "react";
+import "src/style/reset.css";
 import "src/style/about.scss";
 import { Helmet } from "react-helmet";
 import Navigation from "src/components/Navigation";

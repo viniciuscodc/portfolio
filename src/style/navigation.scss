@@ -1,5 +1,30 @@
-@use './imports/colors.scss' as c;
-@use './imports/fonts.scss' as f;
+@use './imports/colors.scss' as color;
+@use './imports/fonts.scss' as font;
+
+@media only screen and (max-width: 550px) {
+  .nav-header {
+    display: none;
+  }
+}
+
+.menu-icon {
+  height: 5rem;
+  z-index: 2;
+  
+  svg {
+    float: right;
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    cursor: pointer;
+    color: color.$sec-grey5;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .menu-icon{
+    display:none;
+  }
+}
 
 .nav-header {
   width: 100%;
@@ -12,25 +37,25 @@
     text-decoration: none;
     font-family: "Roboto", sans-serif;
     font-size: 2.2rem;
-    color: c.$sec-grey10;
+    color: color.$sec-grey10;
     text-decoration: none;
 
     li {
       cursor: pointer;
-      color: c.$sec-grey10;
+      color: color.$sec-grey10;
       text-shadow: 2px 2px 8px #111111;
-      a {
-        &:link {
-          text-decoration: inherit;
-          color: inherit;
-        }
-        &:visited {
-          text-decoration: inherit;
-          color: inherit;
-        }
-        &:hover {
-          color: c.$main-blue;
-        }
+    }
+    a {
+      &:link {
+        text-decoration: inherit;
+        color: inherit;
+      }
+      &:visited {
+        text-decoration: inherit;
+        color: inherit;
+      }
+      &:hover {
+        color: color.$main-blue;
       }
     }
   }
