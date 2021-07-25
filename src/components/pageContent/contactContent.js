@@ -1,6 +1,6 @@
 import * as React from "react";
 import "src/style/reset.css";
-import "src/style/contact.scss";
+import "src/style/contactContent.scss";
 import { Helmet } from "react-helmet";
 import Navigation from "src/components/Navigation";
 import Social from "src/components/Social";

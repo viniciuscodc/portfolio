@@ -18,10 +18,11 @@
 }
 
 .introduction {
-  position: absolute;
-  left: 20%;
-  top: 32%;
-  font-size: 6rem;
+  max-width: 60rem;
+  position: relative;
+  margin-left: 15%;
+  margin-top: 20vh;
+  font-size: 7rem;
   font-weight: 800;
 
   h1 {
@@ -43,21 +44,18 @@
   }
 
   span {
-    position: relative;
     color: color.$sec-grey10;
-  }
-
-  :nth-child(4) {
-    color: color.$main-green;
+    &:last-of-type {
+      color: color.$main-green;
+    }
   }
 
   button {
     background: none;
     position: relative;
-    top: 7rem;
-    left: -48rem;
+    margin-top: 1.5rem;
     padding: 0.5rem 1.3rem;
-    font-size: 3.2rem;
+    font-size: 4rem;
     font-weight: 300;
     color: color.$main-blue;
     border: 2px solid color.$main-blue;
@@ -88,11 +86,18 @@
   }
 }
 
+@media only screen and (max-width: 615px) {
+  .introduction {
+    font-size: 5rem;
+  }
+}
+
 .footer-index {
-  position: absolute;
-  bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  color: color.$sec-grey6;
-  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  span {
+    padding-top: 19.8rem;
+    font-size: 1.2rem;
+    color: color.$sec-grey6;
+  }
 }
