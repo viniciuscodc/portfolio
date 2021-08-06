@@ -26,7 +26,7 @@ const projects = [
   {
     id: 9,
     description:
-      "A portfolio that contains some things I have been learning, it's the page you are acessing right now. A react focused project, I used gatsby to manage page routing and designed it in Figma.",
+      "A portfolio that contains some things I have been learning, it's the page you are accessing right now. A react focused project, I used gatsby to manage page routing and designed it in Figma.",
     link: "",
     tag_1: "SASS",
     tag_2: "HTML",
