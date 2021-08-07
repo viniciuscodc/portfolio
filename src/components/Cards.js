@@ -10,12 +10,22 @@ import image7 from "src/images/projects/image-7.png";
 import image8 from "src/images/projects/image-8.png";
 import image9 from "src/images/projects/image-9.png";
 import image10 from "src/images/projects/image-10.png";
+import image11 from "src/images/projects/image-11.png";
 
 const projects = [
   {
+    id: 11,
+    description:
+      "A react app, expenses can be added by the user and there’s an expense filter by date. Coded using typescript.",
+    link: "https://viniciuscodc.github.io/ExpensesList/",
+    tag_1: "React",
+    tag_2: "Typescript",
+    tag_3: "CSS",
+  },
+  {
     id: 10,
     description:
-      "A backend project, it's a interative list displayer where you can add/remove/edit items, the information is stored in a database managed by Entity framework.",
+      "A backend project, it's a interactive list displayer where you can add/remove/edit items, the information is stored in a database managed by Entity framework.",
     link: "https://github.com/viniciuscodc/InAndOut",
     tag_1: "C#",
     tag_2: ".NET Core",
@@ -141,6 +151,7 @@ function CardTag(cardTagData) {
 }
 
 const images = [
+  image11,
   image10,
   image9,
   image8,
